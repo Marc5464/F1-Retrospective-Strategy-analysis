@@ -45,16 +45,3 @@ When the 25-lap stint cap was imposed the lap 7 Safety Car created an clear math
 
 
 
-
-
-
-
-
-
-
-
-
-
-```text
-[INSERT VISUAL 1: Gap to Leader / Race Trace Plot]
-
