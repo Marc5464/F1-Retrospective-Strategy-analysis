@@ -36,6 +36,11 @@ Outcome: McLaren decided to pit Norris immediately after and released Verstappen
 
 The Execution: Pitting Norris immediately on Lap 43 released Verstappen into clean air. This effectively sealed the race outcome, leaving Piastri with insufficient remaining laps to overcome Verstappen’s net time advantage on track.
 
+## Conclusions and Takeaways
+McLaren’s loss at the 2025 Qatar Grand Prix was due to a live strategic miscalculation, misjudged tire degradation, and driver management.
+* Their Critical flaws: They didn't assume 100% competitor rationality.
+When the 25-lap stint cap was imposed the lap 7 Safety Car created an clear mathematical optimum strategy, So you should assume that all opposing teams will decide to pit too. Staying out under the Lap 7 Safety Car was built on the flawed expectation that the midfield would create a traffic shield. In reality, 100% of the field behind pitted and instantly handed Verstappen a free Pit stop. Similarly by calculating the expected value of final position, choosing to stay out to retain strategic flexibility (ie looking for a disruption to capitalise on) is a sub optimal approach as the probability of an incident occurring within the correct window for them to capitalise on is small. Therefore McLaren took a gamble by accepting 24 seconds of guaranteed deficit for the lower probability of a more optimal Safety Car pit window occurring later in the race. Hence dropping their overall expected final position.  
+
 
 
 
