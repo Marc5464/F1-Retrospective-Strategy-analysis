@@ -20,7 +20,7 @@ When every driver pitted under the Safety Car, Verstappen retained P3 and restar
 
 To effectively close on Verstappen after their first pitstop, Piastri and Norris needed to build a ~24s pit-loss window to Sainz and Antonelli in P4 and P5. With 15 laps available before the Lap 25 stint limit, McLaren needed a required pace advantage of ~1.6s/lap over Sainz.
 <p align="center">
-  <img src="Lap10-25-Box-Plot.png" alt="Lap 10-25 Pace Box Plot" width="100%"/>
+  <img src="Fully-anotated-Bplot.png" alt="Lap 10-25 Pace Box Plot" width="100%"/>
   <br/>
   <b>Figure 1:</b> Lap 10-25 Pace Box Plot
 </p>
