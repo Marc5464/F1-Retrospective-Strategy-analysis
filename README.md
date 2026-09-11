@@ -16,8 +16,24 @@ They assumed if a subset of the midfield stayed out, Max Verstappen would re-joi
 McLaren expected higher levels of tire degradation on Verstappen’s 25 lap stints which would have been further impacted by driving behind the midfield's dirty air. Allowing them, on shorter stints, to regain the lost time caused by their extra pitstop.
 
 ## The Reality
+When every driver behind pitted under Safety Car, Verstappen retained P3 and restarted on Lap 10 only ~$1.5\text{s}$ behind Piastri. This effectively handed Verstappen a "free" pit stop  and reduced the race after the restart into a two-stop Medium-Medium-Hard (ran by the McLarens) and a one-stop Medium-Hard for Verstappen.  
 
-Since every car pit Verstappen emerged after his first pitstop in P3 and on the return to green flag on lap ten as we can see from the figure Verstappen is around 1.5 seconds behind the two McLaren's. Effectively receiving a free pitstop and reducing this race to a two stop Medium-Medium-Hard against a one stop Medium-Hard strategy. McLaren would be forced to build their gap in the first stint by driving aggressively since they would have a pit delta of around 24 seconds. 
+To effectively close on Verstappen after their first pitstop, Piastri and Norris needed to build a ~$24\text{s}$ pit-loss window to Sainz and Antonelli in P4 and P5. With 15 laps available before the Lap 25 stint limit, McLaren needed a required pace advantage of ~1.6s/lap over Sainz.
+
+However, the box plots prove that McLaren lacked the required pace
+* Pace Deficit: Piastri’s median lap time was only ~1.2s/lap faster than Sainz—falling ~0.4s/lap short of the required threshold.
+* Post Pit Delta: As seen on the Time Delta plot, Piastri exited the pits ~6s behind Sainz and behind Antonelli too. Re-joining in dirty air compromised his second stint, prevented both McLaren's from utilising their fresh Mediums to chase down the gap to Verstappen.
+
+  
+Since every car pit Verstappen emerged after his first pitstop in P3 and on the return to green flag on lap ten as we can see from the figure Verstappen is around 1.5 seconds behind the two McLaren's. Effectively receiving a free pitstop and reducing this race to a two stop Medium-Medium-Hard against a one stop Medium-Hard strategy. This means McLaren drivers must push to aim to build a 24 second gap in total to catch the Red bull and it was crucial that when they pit they clear The Mercedes and Williams in P4 and P3 respectively. We know they have up to lap 25 to pit and the race resumed on lap 10 giving 15 laps to gain approximately 24 second gap to SAI which means they need too average around 1.6 seconds a lap faster than them. As we can see from the box plots the a median lap times produced by Piastri is around 1.2 seconds faster than Sains, which we can see was not enough. which caused Piastri to fall around 6 seconds behind the Sais after the pit as we can see. This became a major problem for the McLaren's since they were not able to push as fast on their fresh mediums and as a result didnt close the gap to Verstappen as effetivley. j
+
+
+
+
+
+
+
+
 
 
 ```text
