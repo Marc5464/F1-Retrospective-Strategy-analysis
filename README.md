@@ -16,9 +16,9 @@ They assumed if a subset of the midfield stayed out, Max Verstappen would re-joi
 McLaren expected higher levels of tire degradation on Verstappen’s 25 lap stints which would have been further impacted by driving behind the midfield's dirty air. Allowing them, on shorter stints, to regain the lost time caused by their extra pitstop.
 
 ## The Reality
-When every driver pitted under the Safety Car, Verstappen retained P3 and restarted on Lap 10 only ~$1.5\text{s}$ behind Piastri. This effectively handed Verstappen a "free" pit stop  and reduced the race after the restart into a two-stop Medium-Medium-Hard (ran by the McLarens) and a one-stop Medium-Hard for Verstappen.  
+When every driver pitted under the Safety Car, Verstappen retained P3 and restarted on Lap 10 only ~1.5s behind Piastri. This effectively handed Verstappen a "free" pit stop  and reduced the race after the restart into a two-stop Medium-Medium-Hard (ran by the McLarens) and a one-stop Medium-Hard for Verstappen.  
 
-To effectively close on Verstappen after their first pitstop, Piastri and Norris needed to build a ~$24\text{s}$ pit-loss window to Sainz and Antonelli in P4 and P5. With 15 laps available before the Lap 25 stint limit, McLaren needed a required pace advantage of ~1.6s/lap over Sainz.
+To effectively close on Verstappen after their first pitstop, Piastri and Norris needed to build a ~24s pit-loss window to Sainz and Antonelli in P4 and P5. With 15 laps available before the Lap 25 stint limit, McLaren needed a required pace advantage of ~1.6s/lap over Sainz.
 
 However, the box plots prove that McLaren lacked the required pace
 * Pace Deficit: Piastri’s median lap time was only ~1.2s/lap faster than Sainz—falling ~0.4s/lap short of the required threshold.
