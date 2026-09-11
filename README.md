@@ -19,11 +19,19 @@ McLaren expected higher levels of tire degradation on Verstappen’s 25 lap stin
 When every driver pitted under the Safety Car, Verstappen retained P3 and restarted on Lap 10 only ~1.5s behind Piastri. This effectively handed Verstappen a "free" pit stop  and reduced the race after the restart into a two-stop Medium-Medium-Hard (ran by the McLarens) and a one-stop Medium-Hard for Verstappen.  
 
 To effectively close on Verstappen after their first pitstop, Piastri and Norris needed to build a ~24s pit-loss window to Sainz and Antonelli in P4 and P5. With 15 laps available before the Lap 25 stint limit, McLaren needed a required pace advantage of ~1.6s/lap over Sainz.
-
+<p align="center">
+  <img src="Lap10-25-Box-Plot.png" alt="Lap 10-25 Pace Box Plot" width="100%"/>
+  <br/>
+  <b>Figure 1:</b> Lap 10-25 Pace Box Plot
+</p>
 However, the box plots prove that McLaren lacked the required pace
-* Pace Deficit: Piastri’s median lap time was only ~1.2s/lap faster than Sainz—falling ~0.4s/lap short of the required threshold.
+* Pace Deficit: Piastri’s median lap time was only ~1.1s/lap faster than Sainz—falling ~0.4s/lap short of the required threshold.
 * Post Pit Delta: As seen on the Time Delta plot, Piastri exited the pits ~6s behind Sainz and Antonelli. Re-joining in dirty air compromised his second stint and prevented both McLaren's from utilising their fresh Mediums to chase down the gap to Verstappen.
-
+<p align="center">
+  <img src="VER-delta.png" alt="Delta to Leader Plot" width="100%"/>
+  <br/>
+  <b>Figure 2:</b> Time Delta to VER 
+</p>
 During Laps 25–32, Piastri re-joined in dirty air behind Sainz and Antonelli. As demonstrated in the fuel-adjusted lap time plot, running in this traffic severely accelerated thermal tire wear. Once Piastri cleared the traffic on Lap 32, his lap times dropped sharply in clean air. However, the tire damage sustained during those six laps in traffic capped his ultimate stint length and pace. By Lap 42, Piastri could only extend his lead over Verstappen to ~9 seconds—meaning he emerged around 15 seconds behind Verstappen after his final pitstop. 
 
 When Piastri took his final mandatory stop on Lap 42 for Hard tires, he emerged in P3 behind Norris (P1, yet to pit) and Verstappen (P2) giving McLaren two options.
