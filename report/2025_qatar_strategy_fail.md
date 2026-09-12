@@ -34,7 +34,7 @@ However, the box plots prove that McLaren lacked the required pace
 </p>
 Consequently during Laps 25–32, Piastri re-joined behind Sainz and Antonelli. Running in this dirty air severely accelerated thermal tire degradation which is evident by the steeper gradient during the dirty air laps in figure 3. Once the cars infront of Piastri made their mandatory pitstop on Lap 32, his lap times dropped sharply and by extrapolating the linear tyre wear line backwards it shows that traffic was potentially holding up Piastri 1 second each lap. However, the tire damage sustained during those six laps (in traffic) capped his ultimate stint length and pace. By Lap 42, Piastri could only extend his lead over Verstappen to ~9 seconds—meaning he emerged around 15 seconds behind Verstappen after his final pitstop (as demonstrated in figure 2). 
 <p align="center">
-  <img src="PIA-fuelAdj-times.png" alt="tyre degradation lap times" width="100%"/>
+  <img src="PIA-fuelAdj-times.png" alt="tyre degradation  fuel adjusted pace" width="100%"/>
   <br/>
   <b>Figure 3:</b> Tyre degradation fuel lap times
 </p>
@@ -47,6 +47,27 @@ When Piastri took his final mandatory stop on Lap 42 for Hard tires, he emerged 
 Outcome: McLaren decided to pit Norris immediately after and released Verstappen into clean air. This effectively sealed the race outcome, leaving Piastri with insufficient remaining laps to overcome Verstappen’s net time advantage on track.
 
 The Execution: Pitting Norris immediately on Lap 43 released Verstappen into clean air. This effectively sealed the race outcome, leaving Piastri with insufficient remaining laps to overcome Verstappen’s net time advantage on track.
+
+## Verstappen
+While Piastri had enough pace to create a large enough pit window to remain ahead of Antonelli and Sainz after pitting again he was still 15 seconds behind Verstappen. This was due to Verstappen maintaining an excellent pace in his first stint and managing the tyre wear incredibly well. As shown in the plots below, Verstappen managed his tyres well and maintained a similar fuel adjusted pace for the entirety of his first stint, unlike Sainz and Antonelli. This was a clear indicator to McLaren that tyre degradation was not as detrimental to Verstappen's lap times as they predicted and drastically reduced their chances of taking back the lead.
+
+<table>
+  <tr>
+    <td width="33.33%">
+      <img src="VER-tyres.png" alt="Delta to Leader" width="100%"/>
+      <p align="center"><b>Fig VER:</b> Fuel-Adjusted Pace</p>
+    </td>
+    <td width="33.33%">
+      <img src="SAI-tyres.png" alt="Stint Pace Box Plots" width="100%"/>
+      <p align="center"><b>Fig SAI:</b> Fuel-Adjusted Pace</p>
+    </td>
+    <td width="33.33%">
+      <img src="ANT-tyres.png" alt="Fuel Adjusted Pace" width="100%"/>
+      <p align="center"><b>Fig ANT:</b> Fuel-Adjusted Pace</p>
+    </td>
+  </tr>
+</table>
+
 
 ## Conclusions and Takeaways
 McLaren’s loss at the 2025 Qatar Grand Prix was due to a live strategic miscalculation, misjudged tire degradation, and driver management.
