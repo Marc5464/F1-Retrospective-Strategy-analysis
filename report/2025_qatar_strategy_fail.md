@@ -25,15 +25,19 @@ To effectively close on Verstappen after their first pitstop, Piastri and Norris
   <b>Figure 1:</b> Lap 10-25 Pace Box Plot
 </p>
 However, the box plots prove that McLaren lacked the required pace
+* Post Pit Delta: As seen on the Time Delta plot (figure 2), Piastri exited the pits ~6s behind Sainz and Antonelli. Re-joining in dirty air compromised his second stint and prevented both McLaren's from utilising their fresh Mediums to chase down the gap to Verstappen.
 * Pace Deficit: Piastri’s median lap time was only ~1.1s/lap faster than Sainz—falling ~0.4s/lap short of the required threshold.
-* Post Pit Delta: As seen on the Time Delta plot, Piastri exited the pits ~6s behind Sainz and Antonelli. Re-joining in dirty air compromised his second stint and prevented both McLaren's from utilising their fresh Mediums to chase down the gap to Verstappen.
 <p align="center">
   <img src="VER-delta.png" alt="Delta to Leader Plot" width="100%"/>
   <br/>
   <b>Figure 2:</b> Time Delta to VER 
 </p>
-During Laps 25–32, Piastri re-joined in dirty air behind Sainz and Antonelli. As demonstrated in the fuel-adjusted lap time plot, running in this traffic severely accelerated thermal tire wear. Once Piastri cleared the traffic on Lap 32, his lap times dropped sharply in clean air. However, the tire damage sustained during those six laps in traffic capped his ultimate stint length and pace. By Lap 42, Piastri could only extend his lead over Verstappen to ~9 seconds—meaning he emerged around 15 seconds behind Verstappen after his final pitstop. 
-
+Consequently during Laps 25–32, Piastri re-joined behind Sainz and Antonelli. Running in this dirty air severely accelerated thermal tire degradation which is evident by the steeper gradient during the dirty air laps in figure 3. Once the cars infront of Piastri made their mandatory pitstop on Lap 32, his lap times dropped sharply and by extrapolating the linear tyre wear line backwards it shows that traffic was potentially holding up Piastri 1 second each lap. However, the tire damage sustained during those six laps (in traffic) capped his ultimate stint length and pace. By Lap 42, Piastri could only extend his lead over Verstappen to ~9 seconds—meaning he emerged around 15 seconds behind Verstappen after his final pitstop (as demonstrated in figure 2). 
+<p align="center">
+  <img src="PIA-fuelAdj-times.png" alt="tyre degradation lap times" width="100%"/>
+  <br/>
+  <b>Figure 3:</b> Tyre degradation fuel lap times
+</p>
 When Piastri took his final mandatory stop on Lap 42 for Hard tires, he emerged in P3 behind Norris (P1, yet to pit) and Verstappen (P2) giving McLaren two options.
 
 * Option 1) Hold Back Verstappen: Norris was leading the race on track directly ahead of Verstappen. Had McLaren extended Norris's stint by 2–3 laps to intentionally hold up Verstappen. Piastri—running on fresh tyres in clean air, was gaining aver a second a lap on Verstappen even without being held so with help from Norris they could have closed the gap and mounted an attack on P1.
