@@ -49,7 +49,7 @@ Outcome: McLaren decided to pit Norris immediately after and released Verstappen
 The Execution: Pitting Norris immediately on Lap 43 released Verstappen into clean air. This effectively sealed the race outcome, leaving Piastri with insufficient remaining laps to overcome Verstappen’s net time advantage on track.
 
 ## Verstappen
-While Piastri had enough pace to create a large enough pit window to remain ahead of Antonelli and Sainz after pitting again he was still 15 seconds behind Verstappen. This was due to Verstappen maintaining an excellent pace in his first stint and managing the tyre wear incredibly well. As shown in the plots below, Verstappen managed his tyres well and maintained a similar fuel adjusted pace for the entirety of his first stint, unlike Sainz and Antonelli. This was a clear indicator to McLaren that tyre degradation was not as detrimental to Verstappen's lap times as they predicted and drastically reduced their chances of taking back the lead.
+While Piastri had enough pace to create a large enough pit window to remain ahead of Antonelli and Sainz after pitting again he was still 15 seconds behind Verstappen. This was due to Verstappen maintaining an excellent pace in his stint after the saftey car (laps 10 to 32) and managing the tyre wear incredibly well. As shown in the plots below, Verstappen managed his tyres well and maintained a similar fuel adjusted pace for the entirety of his first stint, unlike Sainz and Antonelli. This was a clear indicator to McLaren that tyre degradation was not as detrimental to Verstappen's lap times as they predicted and drastically reduced their chances of taking back the lead.
 
 <table>
   <tr>
