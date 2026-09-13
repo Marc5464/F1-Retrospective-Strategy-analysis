@@ -4,6 +4,7 @@
 
 **Quick Answer:**
 When the Safety Car emerged on Lap 7, pitting offered a discounted pit stop while perfectly splitting the 57-lap race into two clean 25-lap stints ($7 + 25 + 25 = 57$), satisfying the FIA's mandatory stint cap. Since McLaren elected to stay out while every other car pitted, Max Verstappen was allowed a "free" stop and re-joined in P3 right behind the leading Maclaren. This put McLaren a net pit stop behind and without a traffic buffer or sufficient tire degradation to build a 24-second clean-air window, McLaren was then forced to leave both drivers two green-flag stops while Verstappen only needed one.
+[Jump to Conclusion](#conclusions-and-takeaways)
 ## Context 
 During this 2025 Qatar GP the FIA imposed a strict 25 lap stint length for the 57 lap race, forcing teams to run at least a 2 stop strategy.
 Heading into Lap 7, Oscar Piastri led the Grand Prix from P1, with Max Verstappen in P2 and Lando Norris in P3. The Safety Car was deployed on Lap 7 and only Mclaren chose to stay out. 
