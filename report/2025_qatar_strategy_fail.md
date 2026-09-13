@@ -104,6 +104,30 @@ If we use our basic poison model with an optimistic 0.02 probability of a safety
 #### Model Assumptions:
 The model deliberatley simplified the problem to only look at the affect of holding out for a better Safety Car and ignored all the other factors that would affect the final time delta. 
 
+$$
+T = T_{\text{pit}} - \sum_{i \in \mathcal{M}} \left( I_i \cdot \Delta t_{\text{traffic}, i} \right) + I_{\text{SC}} \cdot \Delta t_{\text{SC}} + \Delta t_{\text{deg}} + \Delta t_{\text{pace}}
+$$
+
+<table>
+  <tr valign="top">
+    <td width="50%">
+
+* **$T$**: Net time delta at race end ($s$).
+* **$T_{\text{pit}}$**: green-flag pit loss ($\approx 24.0\text{s}$).
+* **$\mathcal{M}$**: Midfield cars in Lap 7 SC window $\approx 14.0\text{s}$.
+* **$I_i$**: Indicator RV for car $i$ staying out.
+
+    </td>
+    <td width="50%">
+
+* **$I_{\text{SC}}$**: Indicator for future SC/VSC deployment.
+* **$\Delta t_{\text{SC}}$**: SC pit stop discount ($\approx -10.0\text{s}$).
+* **$\Delta t_{\text{deg}}$**: Tyre degradation pace delta.
+* **$\Delta t_{\text{traffic}, i}$**: Verstappen time penalty overtaking car $i$.
+
+    </td>
+  </tr>
+</table>
 
 ## Conclusions and Takeaways
 McLaren’s loss at the 2025 Qatar Grand Prix was due to a live strategic miscalculation, misjudged tire degradation, and driver management.
