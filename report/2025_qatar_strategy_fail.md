@@ -102,10 +102,10 @@ $$E[I_{\text{SC}} \cdot (-10)] = -10 \cdot \left( 1 - e^{-\lambda \cdot \Delta L
 If we use our basic poison model with an optimistic 0.02 probability of a safety car per lap and a 35 lap suitable pit window we get $$0.5 \approx \cdot \left( 1 - e^{-0.02 \cdot 35} \right)$$ so even under a full safety car with grid bunching McLaren traded 24 seconds of additional pitstop time for a low chance to regain less than half of that time from another incident later on in the race. So ultimately, remaining flexible mathematically lowered their expected finishing position.
 
 #### Model Assumptions:
-The model deliberatley simplified the problem to only look at the affect of holding out for a better Safety Car and ignored all the other factors that would affect the final time delta. 
+The model deliberately simplified the problem to only look at the affect of holding out for a better Safety Car and ignored all the other factors that would affect the final time delta. Below included for completeness is another model showing how traffic and a tyre wear loss could be added. 
 
 $$
-T = T_{\text{pit}} - \sum_{i \in \mathcal{M}} \left( I_i \cdot \Delta t_{\text{traffic}, i} \right) + I_{\text{SC}} \cdot \Delta t_{\text{SC}} + \Delta t_{\text{deg}} + \Delta t_{\text{pace}}
+T = T_{\text{pit}} - \sum_{i \in \mathcal{M}} \left( I_i \cdot \Delta t_{\text{traffic}, i} \right) + I_{\text{SC}} \cdot \Delta t_{\text{SC}} + \Delta t_{\text{deg}} 
 $$
 
 <table>
