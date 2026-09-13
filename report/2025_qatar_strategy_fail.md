@@ -68,21 +68,37 @@ While Piastri had enough pace to create a large enough pit window to remain ahea
   </tr>
 </table>
 
-## A Short Mathematical View:
-Letting $T$ be the random variable representing the final time delta between Oscar Piastri and Max Verstappen at the end of the race, we model $T$ as:
+## A Mathematical View of Saftey Car:
+Letting $T$ be the random variable representing the final time delta between Oscar Piastri and Max Verstappen at the end of the race, we can model $T$ as:
 
 $$
-T = 24 - \sum_{i \in \mathcal{M}} \left( I_i \cdot \Delta t_i \right) + I_{\text{SC}} \cdot (-10)
+T \approx 24 + I_{\text{SC}} \cdot (-10)
 $$
 
 where:
 
 * $24$ is the aproximate green-flag pit loss time (in seconds).
-* $\mathcal{M}$ is the set of midfield cars running within Verstappen's 14-second pit Safety Car pit window (which he would have lost position to had they not to pit with him on lap 7).
-* $I_i$ is the indicator variable for the $i$-th midfield car not pitting under the Safety Car ($I_i = 1$ if the car stays out, $0$ otherwise).
-* $\Delta t_i$ is the delta time loss sustained by Verstappen relative to Piastri while behind car $i$.
 * $I_{\text{SC}}$ is the indicator variable representing at least one Safety Car deployment occurring within McLaren's actionable pit window ($I_{\text{SC}} = 1$ if an SC occurs, $0$ otherwise).
 * $-10$ is the net time gained on the pit stop (in seconds) by pitting under Safety Car relative to a green-flag stop.
+On taking the expected value:
+
+$$E[T] \approx 24 - 10 \cdot E[I_{\text{SC}}]$$
+
+For mathematical simplicity in our baseline model, we can approximate SC deployments as a Poisson Process with a constant rate parameter $\lambda$ per lap:
+
+$$E[I_{\text{SC}}] = P(\text{SC} \ge 1) = 1 - P(\text{SC} = 0) = 1 - e^{-\lambda \cdot \Delta L}$$
+
+where:
+* $\Delta L = L_b - L_a + 1$ is the total length of the actionable pit window (in laps).
+* $\lambda = \frac{N_{\text{SC}}}{L_{\text{total}}}$ is the constant per-lap Safety Car deployment rate estimated from historical race data.
+
+So the expected time discount under the homogeneous assumption simplifies to:
+
+$$E[I_{\text{SC}} \cdot (-10)] = -10 \cdot \left( 1 - e^{-\lambda \cdot \Delta L} \right)$$
+
+* Note: A Non-Homogeneous Poisson Process with a lap-dependent rate $\lambda(l)$ would provide a more suitable model for actual race conditions since $\lambda(l)$ spikes during Lap 1 and immediately following restarts where cars are bunched together, then decreases as the field spreads out and overtakes become less frequent.
+
+If we use our basic poison model with an optimistic 0.02 probability of a safety car per lap and a 35 lap suitable pit window we get $$0.5 \approx \cdot \left( 1 - e^{-0.02 \cdot 35} \right)$$ so even under a full safety car with grid bunching McLaren traded 24 seconds of additional pitstop time for a low chance to regain less than half of that time from another incident later on in the race. So ultimately, remaining flexible mathematically lowered their expected finishing position.
 
 
 ## Conclusions and Takeaways
