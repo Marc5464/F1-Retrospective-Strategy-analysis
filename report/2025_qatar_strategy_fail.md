@@ -68,11 +68,28 @@ While Piastri had enough pace to create a large enough pit window to remain ahea
   </tr>
 </table>
 
+## A Short Mathematical View:
+Letting $T$ be the random variable representing the final time delta between Oscar Piastri and Max Verstappen at the end of the race, we model $T$ as:
+
+$$
+T = 24 - \sum_{i \in \mathcal{M}} \left( I_i \cdot \Delta t_i \right) + I_{\text{SC}} \cdot (-10)
+$$
+
+where:
+
+* $24$ is the aproximate green-flag pit loss time (in seconds).
+* $\mathcal{M}$ is the set of midfield cars running within Verstappen's 14-second pit Safety Car pit window (which he would have lost position to had they not to pit with him on lap 7).
+* $I_i$ is the indicator variable for the $i$-th midfield car not pitting under the Safety Car ($I_i = 1$ if the car stays out, $0$ otherwise).
+* $\Delta t_i$ is the delta time loss sustained by Verstappen relative to Piastri while behind car $i$.
+* $I_{\text{SC}}$ is the indicator variable representing at least one Safety Car deployment occurring within McLaren's actionable pit window ($I_{\text{SC}} = 1$ if an SC occurs, $0$ otherwise).
+* $-10$ is the net time gained on the pit stop (in seconds) by pitting under Safety Car relative to a green-flag stop.
+
 
 ## Conclusions and Takeaways
 McLaren’s loss at the 2025 Qatar Grand Prix was due to a live strategic miscalculation, misjudged tire degradation, and driver management.
-* Their Critical flaws: They didn't assume 100% competitor rationality.
-When the 25-lap stint cap was imposed the lap 7 Safety Car created an clear mathematical optimum strategy, So you should assume that all opposing teams will decide to pit too. Staying out under the Lap 7 Safety Car was built on the flawed expectation that the midfield would create a traffic shield. In reality, 100% of the field behind pitted and instantly handed Verstappen a free Pit stop. Similarly by calculating the expected value of final position, choosing to stay out to retain strategic flexibility (ie looking for a disruption to capitalise on) is a sub optimal approach as the probability of an incident occurring within the correct window for them to capitalise on is small. Therefore McLaren took a gamble by accepting 24 seconds of guaranteed deficit for the lower probability of a more optimal Safety Car pit window occurring later in the race. Hence dropping their overall expected final position.  
+* Their Critical flaws: They didn't assume full competitor rationality.
+When the 25-lap stint cap was imposed the lap 7 Safety Car created an clear mathematical optimum strategy, So you should assume that all opposing teams will decide to pit too. Staying out under the Lap 7 Safety Car was built on the flawed expectation that the midfield would create a traffic shield. In reality, 100% of the field behind pitted and instantly handed Verstappen a free Pit stop.
+* Similarly they overestimated the chance of another Safety Car. When calculating the expected value of the ending time delta between Piastri and Verstappen, choosing to stay out to retain strategic flexibility (ie looking for a disruption to capitalise on) is a sub optimal approach as the probability of an incident occurring within the correct window for them to capitalise on is small. Therefore McLaren took a gamble by accepting 24 seconds of guaranteed deficit for the lower probability of a more optimal Safety Car pit window occurring later in the race. Hence dropping their overall expected final position.  
 
 
 
