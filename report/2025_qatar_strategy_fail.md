@@ -129,7 +129,7 @@ $$
 
 * **$\Delta t_{\text{wear}}(a_l, \text{tyre})$**: Lap time penalty due to tire degradation at age $a_l$.
 * **$a_l$**: Age of the current tire set at lap $l$.
-* **$I_{\text{traffic}, l, T_{\text{i}$**: Indicator variable for the respective T's ($1$ if in traffic/dirty air on lap $l$, $0$ otherwise).
+* **$I_{\text{traffic}, l, T_i}$**: Indicator variable for the respective T's ($1$ if in traffic/dirty air on lap $l$, $0$ otherwise).
 * **$\Delta t_{\text{traffic}}$**: Time loss per lap caused by traffic/dirty air ($\text{s/lap}$).
 * **$P_{\text{loss}, j}$**: Pit stop time loss for the $j$th stint stop ($24 - 10 \cdot I_{\text{SC}}$).
 
