@@ -105,35 +105,38 @@ If we use our basic poison model with an optimistic 0.02 probability of a safety
 The model deliberately simplified the problem to only look at the affect of holding out for a better Safety Car and ignored all the other factors that would affect the final time delta. Below included for completeness is another model showing how traffic and a tyre wear loss could be added. First let $$T_1$$ denote the RV for total race time given stay out on lap 7
 
 $$
-T_1 = \sum_{l=7}^{l_{\text{pit2}}} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Medium}) + I_{\text{traffic}, l} \cdot \Delta t_{\text{traffic}} \Big) + P_{\text{loss}, 1} +  P_{\text{loss}, 2} + \sum_{l=l_{\text{pit2}}+1}^{57} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Hard}) + I_{\text{traffic}, l} \cdot \Delta t_{\text{traffic}} \Big) 
+T_1 = \sum_{l=7}^{l_{\text{pit2}}} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Medium}) + I_{\text{traffic}, l, T_1} \cdot \Delta t_{\text{traffic}} \Big) + P_{\text{loss}, 1} + P_{\text{loss}, 2} + \sum_{l=l_{\text{pit2}}+1}^{57} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Hard}) + I_{\text{traffic}, l, T_1} \cdot \Delta t_{\text{traffic}} \Big)
 $$
 
+Let $$T_2$$ be the random variable representing race time given Pit under the lap 7 safety car
+
 $$
-T_2 = P_{\text{loss}, \text{SC}} + \sum_{l=7}^{32} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Medium}) + I_{\text{traffic}, l} \cdot \Delta t_{\text{traffic}} \Big) + P_{\text{loss}, 2} + \sum_{l=l_{33}^{57} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Hard}) + I_{\text{traffic}, l} \cdot \Delta t_{\text{traffic}} \Big)
+T_2 = P_{\text{loss}, \text{SC}} + \sum_{l=7}^{32} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Medium}) + I_{\text{traffic}, l, T_2} \cdot \Delta t_{\text{traffic}} \Big) + P_{\text{loss}, 2} + \sum_{l=33}^{57} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Hard}) + I_{\text{traffic}, l, T_2} \cdot \Delta t_{\text{traffic}} \Big)
 $$
 
 <table>
   <tr valign="top">
     <td width="50%">
 
-* **$T_1$**: Total finishing time given staying out on Lap 7 ($s$).
+* **$T_2$**: Total finishing time given pitting on Lap 7 ($s$).
+* **$P_{\text{loss}, \text{SC}}$**: Discounted pit stop time loss under Lap 7 Safety Car ($\approx 14\text{s}$).
 * **$l$**: Current lap index ($l \in [7, 57]$).
-* **$l_{\text{pit}}$**: Lap of the scheduled tire change.
-* **$t_{\text{raw}}(l)$**: Base lap time at lap $l$ (with fuel burn).
-* **$\Delta t_{\text{wear}}(a_l, \text{Medium})$**: Lap time penalty due to tire degradation at age $a_l$.
-* **$a_l$**: Age of the current tire set at lap $l$.
+* **$l_{\text{pit2}}$**: Lap of the second required tire change.
+* **$t_{\text{raw}}(l)$**: Base lap time at lap $l$ (accounts for fuel burn).
 
     </td>
     <td width="50%">
 
-* **$I_{\text{traffic}, l}$**: Indicator variable ($1$ if following within dirty air range at lap $l$, $0$ otherwise).
+* **$\Delta t_{\text{wear}}(a_l, \text{tyre})$**: Lap time penalty due to tire degradation at age $a_l$.
+* **$a_l$**: Age of the current tire set at lap $l$.
+* **$I_{\text{traffic}, l, T_{\text{i}$**: Indicator variable for the respective T's ($1$ if in traffic/dirty air on lap $l$, $0$ otherwise).
 * **$\Delta t_{\text{traffic}}$**: Time loss per lap caused by traffic/dirty air ($\text{s/lap}$).
-* **$P_{\text{loss}, j}$**: Pit stop time loss for stop $j$ ($\approx 24\text{s}$ under green flag, $\approx 14\text{s}$ under SC).
-* **$P_{\text{loss}} = 24 - 10 \cdot I_{\text{SC}}$**: Pit loss formula incorporating SC discount indicator $I_{\text{SC}}$.
+* **$P_{\text{loss}, j}$**: Pit stop time loss for the $j$th stint stop ($24 - 10 \cdot I_{\text{SC}}$).
 
     </td>
   </tr>
 </table>
+
 
 ## Conclusions and Takeaways
 McLaren’s loss at the 2025 Qatar Grand Prix was due to a live strategic miscalculation, misjudged tire degradation, and driver management.
