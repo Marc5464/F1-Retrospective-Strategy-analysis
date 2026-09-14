@@ -102,28 +102,34 @@ $$E[I_{\text{SC}} \cdot (-10)] = -10 \cdot \left( 1 - e^{-\lambda \cdot \Delta L
 If we use our basic poison model with an optimistic 0.02 probability of a safety car per lap and a 35 lap suitable pit window we get $$0.5 \approx \cdot \left( 1 - e^{-0.02 \cdot 35} \right)$$ so even under a full safety car with grid bunching McLaren traded 24 seconds of additional pitstop time for a low chance to regain less than half of that time from another incident later on in the race. So ultimately, remaining flexible mathematically lowered their expected finishing position.
 
 #### Model Assumptions:
-The model deliberately simplified the problem to only look at the affect of holding out for a better Safety Car and ignored all the other factors that would affect the final time delta. Below included for completeness is another model showing how traffic and a tyre wear loss could be added. 
+The model deliberately simplified the problem to only look at the affect of holding out for a better Safety Car and ignored all the other factors that would affect the final time delta. Below included for completeness is another model showing how traffic and a tyre wear loss could be added. First let $$T_1$$ denote the RV for total race time given stay out on lap 7
 
 $$
-T = T_{\text{pit}} - \sum_{i \in \mathcal{M}} \left( I_i \cdot \Delta t_{\text{traffic}, i} \right) + I_{\text{SC}} \cdot \Delta t_{\text{SC}} + \Delta t_{\text{deg}} 
+T_1 = \sum_{l=7}^{l_{\text{pit2}}} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Medium}) + I_{\text{traffic}, l} \cdot \Delta t_{\text{traffic}} \Big) + P_{\text{loss}, 1} +  P_{\text{loss}, 2} + \sum_{l=l_{\text{pit2}}+1}^{57} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Hard}) + I_{\text{traffic}, l} \cdot \Delta t_{\text{traffic}} \Big) 
+$$
+
+$$
+T_2 = P_{\text{loss}, \text{SC}} + \sum_{l=7}^{32} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Medium}) + I_{\text{traffic}, l} \cdot \Delta t_{\text{traffic}} \Big) + P_{\text{loss}, 2} + \sum_{l=l_{33}^{57} \Big( t_{\text{raw}}(l) + \Delta t_{\text{wear}}(a_l, \text{Hard}) + I_{\text{traffic}, l} \cdot \Delta t_{\text{traffic}} \Big)
 $$
 
 <table>
   <tr valign="top">
     <td width="50%">
 
-* **$T$**: Net time delta at race end ($s$).
-* **$T_{\text{pit}}$**: green-flag pit loss ($\approx 24.0\text{s}$).
-* **$\mathcal{M}$**: Midfield cars in Lap 7 SC window $\approx 14.0\text{s}$.
-* **$I_i$**: Indicator RV for car $i$ staying out.
+* **$T_1$**: Total finishing time given staying out on Lap 7 ($s$).
+* **$l$**: Current lap index ($l \in [7, 57]$).
+* **$l_{\text{pit}}$**: Lap of the scheduled tire change.
+* **$t_{\text{raw}}(l)$**: Base lap time at lap $l$ (with fuel burn).
+* **$\Delta t_{\text{wear}}(a_l, \text{Medium})$**: Lap time penalty due to tire degradation at age $a_l$.
+* **$a_l$**: Age of the current tire set at lap $l$.
 
     </td>
     <td width="50%">
 
-* **$I_{\text{SC}}$**: Indicator for future SC/VSC deployment.
-* **$\Delta t_{\text{SC}}$**: SC pit stop discount ($\approx -10.0\text{s}$).
-* **$\Delta t_{\text{deg}}$**: Tyre degradation pace delta.
-* **$\Delta t_{\text{traffic}, i}$**: Verstappen time penalty overtaking car $i$.
+* **$I_{\text{traffic}, l}$**: Indicator variable ($1$ if following within dirty air range at lap $l$, $0$ otherwise).
+* **$\Delta t_{\text{traffic}}$**: Time loss per lap caused by traffic/dirty air ($\text{s/lap}$).
+* **$P_{\text{loss}, j}$**: Pit stop time loss for stop $j$ ($\approx 24\text{s}$ under green flag, $\approx 14\text{s}$ under SC).
+* **$P_{\text{loss}} = 24 - 10 \cdot I_{\text{SC}}$**: Pit loss formula incorporating SC discount indicator $I_{\text{SC}}$.
 
     </td>
   </tr>
