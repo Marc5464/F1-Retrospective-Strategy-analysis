@@ -70,7 +70,7 @@ While Piastri had enough pace to create a large enough pit window to remain ahea
 </table>
 
 ## A Mathematical View of Saftey Car:
-Letting $T$ be the random variable representing the final time delta between Oscar Piastri and Max Verstappen at the end of the race, we can model $T$ as:
+Letting $T$ be the random variable representing the final time delta between Oscar Piastri pitting on lap 7 or not at the end of the race and focusing only on the saftey car aspect, we can model $T$ as:
 
 $$
 T \approx 24 + I_{\text{SC}} \cdot (-10)
