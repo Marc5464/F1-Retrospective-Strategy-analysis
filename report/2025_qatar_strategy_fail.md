@@ -105,13 +105,13 @@ If we use our basic poison model with an optimistic 0.02 probability of a safety
 The model deliberately simplified the problem to only look at the affect of holding out for a better Safety Car and ignored all the other factors that would affect the final time delta. Below included for completeness is another model showing how traffic and a tyre wear loss could be added. First let $$T_1$$ denote the RV for total race time given stay out on lap 7
 
 $$
-T_1 = \sum_{l=7}^{57} \Big( t_{\text{raw}}(l) + I_{\text{traffic}, l, T_1} \cdot \Delta t_{\text{traffic}} \Big) + \sum_{l=7}^{l_{\text{pit1}}} \Delta t_{\text{wear}}(a_l, \text{Medium}) + P_{\text{loss}, 1} + \sum_{l=l_{\text{pit1}}+1}^{l_{\text{pit2}}} \Delta t_{\text{wear}}(a_l, \text{Medium}) + P_{\text{loss}, 2} + \sum_{l=l_{\text{pit2}}+1}^{57} \Delta t_{\text{wear}}(a_l, \text{Hard})
+T_1 = \sum_{l=1}^{57} \Big( t_{\text{raw}}(l) + I_{\text{traffic}, l, T_1} \cdot \Delta t_{\text{traffic}} \Big) + \sum_{l \in \text{Stint}_1} \Delta t_{\text{wear}}(a_l, \text{Medium}) + P_{\text{loss}, 1} + \sum_{l \in \text{Stint}_2} \Delta t_{\text{wear}}(a_l, \text{Medium}) + P_{\text{loss}, 2} + \sum_{l \in \text{Stint}_3} \Delta t_{\text{wear}}(a_l, \text{Hard})
 $$
 
 Let $$T_2$$ be the random variable representing race time given Pit under the lap 7 safety car
 
 $$
-T_2 = \sum_{l=7}^{57} \Big( t_{\text{raw}}(l) + I_{\text{traffic}, l, T_2} \cdot \Delta t_{\text{traffic}} \Big) + P_{\text{loss}, \text{SC}} + \sum_{l=7}^{32} \Delta t_{\text{wear}}(a_l, \text{Medium}) + P_{\text{loss}, 2} + \sum_{l=33}^{57} \Delta t_{\text{wear}}(a_l, \text{Hard})
+T_2 = \sum_{l=1}^{57} \Big( t_{\text{raw}}(l) + I_{\text{traffic}, l, T_2} \cdot \Delta t_{\text{traffic}} \Big) + \sum_{l=1}^{7} \Delta t_{\text{wear}}(a_l, \text{Medium}) + P_{\text{loss}, \text{SC}} + \sum_{l=8}^{32} \Delta t_{\text{wear}}(a_l, \text{Medium}) + P_{\text{loss}, 2} + \sum_{l=33}^{57} \Delta t_{\text{wear}}(a_l, \text{Hard})
 $$
 
 <table>
