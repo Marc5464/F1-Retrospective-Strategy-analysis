@@ -167,7 +167,7 @@ $$
     <td width="50%">
 
 * **$W_i$**: the actionable pit window length in the ith stint.
-*  **[Tyre Wear Difference Derivation](report/Tyre_wear-derivation.md)*.
+*  **[Tyre Wear Difference Derivation](Tyre_wear-derivation.md)*.
 
     </td>
   </tr>
