@@ -61,7 +61,7 @@ $$
 simplifying 
 
 $$
-T_{2, \text{wear}} = 32 K_{\text{M}} + 25 K_{\text{H}} + 353 m_{\text{M}} + 325 m_{\text{H}}
+T_{2, \text{wear}} = 32 K_{\text{M}} + 25 K_{\text{H}} + 706 m_{\text{M}} + 650 m_{\text{H}}
 $$
 
 
@@ -86,7 +86,7 @@ $$
 Now simplifying the slopes $m$
 
 $$
-\frac{m_{\text{M}}}{2} \Big[ S_1(S_1 + 1) + S_2(S_2 + 1) - (56 + 650) \Big] = \frac{m_{\text{M}}}{2} \Big[ S_1(S_1 + 1) + S_2(S_2 + 1) - 706 \Big]
+\frac{m_{\text{M}}}{2} \Big[ S_1(S_1 + 1) + S_2(S_2 + 1) - 706 \Big]
 $$
 
 
