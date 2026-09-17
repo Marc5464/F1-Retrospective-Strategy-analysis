@@ -6,7 +6,7 @@
 * **$T_2$ Strategy (Fixed 3-Stint Strategy via Lap 7 Safety Car Pit Stop):**
   * Stint lengths: $S_{2,1} = 7$, $S_{2,2} = 25$, $S_{2,3} = 25$ ($7 + 25 + 25 = 57$)
   * Compound usage: $S_{2,1}$ (Medium), $S_{2,2}$ (Medium), $S_{2,3}$ (Hard)
-
+  
 
 Assuming tyre wear is linear (with respect to trye age $a_l$ ) within the 25 lap cap:
 
