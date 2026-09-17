@@ -144,7 +144,7 @@ $$
 $$
 
 $$
-\Delta T_{\text{pit}} = \Big( 10 - 10 \cdot I_{\text{SC, W1}} \Big) - 10 \cdot \Big( I_{\text{SC, W2}} - I_{\text{SC, W3}} \Big)
+\Delta T_{\text{pit}} = \Big( 10 - 10 \cdot I_{\text{SC, W1}} \Big) - 10 \cdot \Big( I_{\text{SC, W2}} - I_{\text{SC, 32}} \Big)
 $$
 
 $$
