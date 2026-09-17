@@ -61,7 +61,7 @@ $$
 simplifying 
 
 $$
-T_{2, \text{wear}} = 32 K_{\text{M}} + 25 K_{\text{H}} + 706 m_{\text{M}} + 650 m_{\text{H}}
+T_{2, \text{wear}} = 32 K_{\text{M}} + 25 K_{\text{H}} + 706 \frac{m_{\text{M}}}{2} + 650 \frac{m_{\text{H}}}{2}
 $$
 
 
