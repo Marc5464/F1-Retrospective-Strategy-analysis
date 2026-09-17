@@ -137,6 +137,23 @@ $$
   </tr>
 </table>
 
+To work which Time is smaller (ie finished first) we take the difference and notice the lap times will cancel: 
+
+$$
+\Delta T = T_1 - T_2 = \Delta T_{\text{traffic}} + \Delta T_{\text{wear}} + \Delta T_{\text{pit}}
+$$
+
+$$
+\Delta T_{\text{pit}} = \Big( 10 - 10 \cdot I_{\text{SC, W1}} \Big) - 10 \cdot \Big( I_{\text{SC, W2}} - I_{\text{SC, W3}} \Big)
+$$
+
+$$
+\Delta T_{\text{traffic}} = \sum_{l=7}^{57} \Big( I_{\text{traffic}, l, T_1} - I_{\text{traffic}, l, T_2} \Big) \cdot \Delta t_{\text{traffic}}
+$$
+
+$$
+\Delta T_{\text{wear}} = \sum_{l \in \text{Stint}_1} \Delta t_{\text{wear}}(a_l, \text{Med}) + \sum_{l \in \text{Stint}_2} \Delta t_{\text{wear}}(a_l, \text{Med}) + \sum_{l \in \text{Stint}_3} \Delta t_{\text{wear}}(a_l, \text{Hard}) - \sum_{l=7}^{32} \Delta t_{\text{wear}}(a_l, \text{Med}) - \sum_{l=33}^{57} \Delta t_{\text{wear}}(a_l, \text{Hard})
+$$
 
 ## Conclusions and Takeaways
 McLaren’s loss at the 2025 Qatar Grand Prix was due to a live strategic miscalculation, misjudged tire degradation, and driver management.
