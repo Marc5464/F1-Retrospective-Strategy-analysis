@@ -1,6 +1,6 @@
 * **$T_1$ Strategy (Variable 3-Stint Strategy):**
   * Stint lengths: $S_1, S_2, S_3$
-  * Conservation constraint: $S_1 + S_2 + S_3 = 57$
+  * Constraint: $S_1 + S_2 + S_3 = 57$
   * Compound usage: $S_1$ (Medium), $S_2$ (Medium), $S_3$ (Hard)
 
 * **$T_2$ Strategy (Fixed 3-Stint Strategy via Lap 7 Safety Car Pit Stop):**
