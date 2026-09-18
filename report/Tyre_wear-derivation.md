@@ -112,7 +112,7 @@ $$
     <td width="50%">
 
 * **$7, 25, 25$**: Fixed stint lengths for $T_2$ (pitting on Laps 7 and 32 under the SC strategy).
-* **$706, 650$**: Closed-form constants evaluating $T_2$'s quadratic series ($7 \times 8 + 25 \times 26 = 706$ and $25 \times 26 = 650$).
+* **$706, 650$**: Constants evaluating $T_2$ ($7 \times 8 + 25 \times 26 = 706$ and $25 \times 26 = 650$).
 
     </td>
   </tr>
